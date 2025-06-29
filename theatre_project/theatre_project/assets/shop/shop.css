@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: #f66aa9;
+  font-family: 'HelveticaNeue', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 38px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.page {
+  width: 100%;
+}
+
+/* Top black section with books */
+.top {
+  background: black;
+  height: 1080px;
+  position: relative;
+  width: 100%;
+}
+
+
+/* COLUMNS */
+.column1 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 10px;
+    height: 600px;
+    top: 0;
+    left: 3%;
+}
+
+.column2 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 10px;
+    height: 600px;
+    top: 0;
+    left: 25%;
+}
+
+.column7 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 10px;
+    height: 300px;
+    bottom: 0;
+    left: 39%;
+}
+
+.column3 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 10px;
+    height: 400px;
+    top: 0;
+    right: 26.95%;
+}
+
+.column6 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 60px;
+    height: 300px;
+    top: 0%;
+    right: 15%;
+}
+
+
+.column4 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 15px;
+    height: 300px;
+    top: 0;
+    right: 3%;
+}
+
+.column5 {
+    position: absolute;
+    background-color: rgba(245, 30, 30, 1);
+    width: 10px;
+    height: 700px;
+    top: 10%;
+    right: 2%;
+}
+
+
+/* CIRCLES */
+.circle1 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5%;
+}
+
+.circle2 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 5%;
+    left: 20%;
+}
+
+.circle3 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 12%;
+    left: 24%;
+}
+
+.circle4 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    bottom: 20%;
+    right: 10%;
+}
+
+.circle5 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 5%;
+    right: 5%;
+}
+
+.circle6 {
+    position: absolute;
+    background-color: rgba(253, 121, 180, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 20%;
+    right: 3%;
+}
+
+
+/* VECTORS */
+.vector1 {
+    position: absolute;
+    right: 527px;
+    top: 57px;
+}
+
+.vector2 {
+    position: absolute;
+    right: 287px;
+    top: 57px;
+}
+
+
+
+
+.shop-title {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+}
+
+.books {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.book {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 680px;
+    background: white;
+    color: red;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: normal;
+}
+
+/* Products section */
+.products {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.products h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px 50px; /* вертикальный и горизонтальный отступ */
+  justify-items: center;
+  padding: 0 40px;
+}
+
+.item {
+    z-index: 1;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.label {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+.sub {
+  font-size: 22px;
+}
+
+.price {
+  background: red;
+  margin-top: 5px;
+  padding: 3px 0;
+  font-size: 34px;
+}
+
+.circle-products1 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 6%;
+    left: 2%;
+}
+
+.circle-products2 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+}
+
+.circle-products3 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.circle-products4 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.circle-products5 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.circle-products6 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    bottom: 8%;
+    right: 15%;
+}
+
+.circle-products7 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 2%;
+    right: 12%;
+}
+
+.circle-products8 {
+    background-color: rgba(255, 169, 210, 1);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    position: absolute;
+    top: 42%;
+    right: 2%;
+}
+
+/* Discount block */
+
+.discount {
+  margin: 60px auto 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 24px;
+  color: white;
+    width: 87%;
+    border-radius: 110px;
+  gap: 20px;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+}
+
+.text1 {
+    font-family: 'Century Gothic', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 80px;
+}
+
+.text1 p {
+    font-weight: 200;
+}
+
+.text2 {
+    font-family: 'Century Gothic Paneuropean';
+    font-size: 210px;
+    line-height: 0.9;
+}
+
+

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeue-01.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: rgba(231, 42, 29, 1);
+    font-family: "HelveticaNeue", sans-serif;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 38px;
+    z-index: 999;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.date {
+    display: inline-block;
+}
+
+.date p {
+    font-family: "HelveticaNeue", sans-serif;
+    font-weight: bold;
+    font-size: 650px;
+    color: rgba(238, 120, 171, 1);
+    margin: 0;
+    line-height: 0.7;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.722);
+    display: flex;
+    flex-direction: column;  
+    text-align: right;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.info h1 {
+    font-weight: normal;
+    font-size: 80px;
+}
+
+.info p {
+    font-size: 40px;
+}
+
+.left {
+    text-align: left;
+    margin-left: 80px
+}
+
+.right {
+    text-align: right;
+    margin-right: 20px;
+}
+
+
+.line1 {
+    position: absolute;
+    background-color: rgba(238, 120, 171, 1);;
+    width: 1350px;
+    height: 10px;
+    left: 28%;
+    top: -3%;
+}
+
+.line2 {
+    position: absolute;
+    background-color: rgba(238, 120, 171, 1);;
+    width: 900px;
+    height: 14px;
+    left: 27%;
+    bottom: 0.8%;
+}
+
+.line3 {
+    position: absolute;
+    background-color: rgba(238, 120, 171, 1);;
+    width: 813px;
+    height: 14px;
+    left: 31.5%;
+    bottom: 0.8%;
+}
+
+.line4 {
+    position: absolute;
+    background-color: rgba(238, 120, 171, 1);;
+    width: 813px;
+    height: 14px;
+    left: 31.5%;
+    bottom: 0.8%;
+}

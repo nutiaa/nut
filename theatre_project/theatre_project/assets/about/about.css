@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeue-01.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    background-color: #f472a7;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 38px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.back {
+    z-index: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.backgrnd {
+    position: absolute;
+    width: 1851px;
+}
+
+
+.point {
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+
+.poin {
+    position: absolute;
+    height: 450px;
+    top: 90px;
+}
+
+.t {
+    position: absolute;
+    height: 450px;
+    top: 90px;
+    right: 20px;
+}
+
+.point-line {
+    position: absolute;
+    right: 26px;
+    width: 1851px;
+}
+
+
+
+.black-text {
+    font-family: "HelveticaNeue", sans-serif;
+    width: 700px;
+    height: 700px;
+    background: black;
+    position: absolute;
+    bottom: -360px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 28px;
+    color: #fcd4eb;
+    line-height: 1.2;
+    font-weight: 100;
+    gap: 1px;
+    z-index: 2;
+}
+
+
+
+.elements {
+    z-index: 4;
+}
+
+.white1 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.white2 {
+    position: absolute;
+    top: 960px;
+    left: 190px;
+    z-index: 5;
+}
+
+.pink {
+    position: absolute;
+    top: 55%;
+    left: 18%;
+}
+
+.pink2 {
+    position: absolute;
+    left: 46%;
+    top: 45%;
+}
+
+.red1 {
+    position: absolute;
+    left: 36%;
+    top: 20%;
+}
+
+.red2 {
+    position: absolute;
+    right: 22%;
+    top: 58%;
+}
+
+.line-bot {
+    position: absolute;
+    width: 1851px;
+    top: 950px;
+    left: 27px;
+}

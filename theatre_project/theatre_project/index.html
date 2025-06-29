@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/program/program.css">
+</head>
+<body id="page">
+    <script src="assets/scripts.js"></script>
+    <header class="header">
+        <a href="/">Program</a>
+        <a href="/calendar.html">Calendar</a>
+        <a href="/tickets.html">Tickets</a>
+        <a href="/services.html">Services</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+    </header>
+
+    <main>
+        <div class="POINT">
+            <img src="assets/program/P.svg" alt="P" class="P">
+            <img src="assets/program/O.svg" alt="O" class="O">
+            <img src="assets/program/i.svg" alt="I" class="I">
+            <img src="assets/program/N.svg" alt="N" class="N">
+            <img src="assets/program/T.svg" alt="T" class="T">
+        </div>
+
+        <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+            <div class="circle6"></div>
+            <div class="circle7"></div>
+        </div>
+
+        <div class="columns-red">
+            <div class="column1"></div>
+            <div class="column2"></div>
+            <div class="column3"></div>
+            <div class="column4"></div>
+            <div class="column5"></div>
+            <div class="column6"></div>
+            <div class="column-pink1"></div>
+            <div class="column-pink2"></div>
+            <div class="column-pink3"></div>
+        </div>
+
+        <div class="photo-container">
+            <img src="assets/program/picture-vector.png" alt="" class="picture-vector">
+            <img src="assets/program/picture.png" alt="" class="picture">
+            <img src="assets/program/picture-vector-r.png" alt="" class="picture-vector-r">
+        </div>
+
+        <button class="buyticket">REGISTER</button>
+        
+    </main>
+
+
+<script>
+  function explodePOINT() {
+    const point = document.querySelector('.POINT');
+    const picture = document.querySelector('.picture');
+    const button = document.querySelector('.buyticket');
+
+    if (!point || !picture || !button) return;
+
+    point.classList.add('explode');
+    picture.classList.add('move-picture');
+
+    picture.addEventListener('animationend', () => {
+      picture.classList.remove('move-picture');
+      picture.classList.add('fade-in');
+      picture.src = 'assets/program/picture-new.png';
+      point.remove();
+
+      button.style.display = 'block';
+      setTimeout(() => {
+        button.classList.add('show');
+      }, 50);
+    }, { once: true });
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(explodePOINT, 2000);
+  });
+</script>
+
+
+
+
+
+
+
+    
+</body>
+</html>

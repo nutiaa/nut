@@ -1,0 +1,388 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/fonts/HelveticaNeue-01.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: rgba(249, 212, 235, 1);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 38px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.buyticket {
+    padding: 8px 80px;
+    border: 4px solid red;
+    background: white;
+    color: black;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    left: 41%;
+}
+
+.buyticket.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.buyticket:hover {
+    background: #e2e2e2;
+    border: 4px solid rgb(180, 1, 1);
+}
+
+
+/* POINT */
+.POINT {
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+}
+
+.POINT .P{
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    left: -1px;
+    z-index: 4;
+}
+
+.POINT .O{
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    left: 16%;
+    z-index: 4;
+}
+
+.POINT .I{
+    position: absolute;
+    width: 480px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.POINT .N{
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    right: 16%;
+    z-index: 4;
+}
+
+.POINT .T{
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    right: -1px;
+    z-index: 4;
+}
+
+
+/* CIRCLES */
+.circle1 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+    z-index: 3;
+
+}
+
+.circle2 {
+    background-color: rgba(231, 42, 29, 1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 55%;
+    left: 22%;
+    z-index: 5;
+}
+
+.circle3 {
+    background-color: rgba(231, 42, 29, 1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 40%;   
+}
+
+.circle4 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60%;
+    right: 45%;   
+}
+
+.circle5 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 20%;   
+}
+
+.circle6 {
+    background-color: rgba(231, 42, 29, 1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 19%;   
+}
+
+.circle7 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    right: 13%;  
+    z-index: 5; 
+}
+
+
+
+/* Красные колонны */
+.column1 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 80px;
+    height: 446px;
+    top: 0;
+    left: 20%;
+    z-index: -4;
+}
+
+.column2 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 110px;
+    height: 1080px;
+    top: 0;
+    left: 32%;
+}
+
+.column3 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 110px;
+    height: 1080px;
+    top: 0;
+    right: 32%;
+}
+
+.column4 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 80px;
+    height: 446px;
+    top: 0;
+    right: 20%;
+    z-index: -4;
+}
+
+
+.column5 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 200px;
+    height: 580px;
+    bottom: 0;
+    left: 13.5%;
+    z-index: -5;
+}
+
+.column6 {
+    background-color: rgba(231, 42, 29, 1);
+    position: absolute;
+    width: 200px;
+    height: 580px;
+    bottom: 0;
+    right: 13.5%;
+    z-index: -5;
+}
+
+.column-pink1 {
+    background-color: rgba(238, 120, 171, 1);
+    position: absolute;
+    left: 0;
+    top: 23%;
+    width: 400px;
+    height: 100px;
+    z-index: -5;
+}
+
+.column-pink2 {
+    background-color: rgba(238, 120, 171, 1);
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 100px;
+    z-index: -4;
+}
+
+.column-pink3 {
+    background-color: rgba(238, 120, 171, 1);
+    position: absolute;
+    right: 0;
+    top: 23%;
+    width: 400px;
+    height: 100px;
+    z-index: -5;
+}
+
+
+
+
+
+/* PHOTO */
+.picture-vector {
+    position: absolute;
+    width: 620px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.picture-vector-r {
+    position: absolute;
+    width: 620px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.picture {
+    position: absolute;
+    width: 1050px;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Буквы разлетаются */
+.POINT.explode img {
+  animation: point-blast 1s ease-in-out forwards;
+}
+
+@keyframes point-blast {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) translateX(calc(var(--direction, 0) * 200px)) scale(0.7) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.P { --direction: -1; }
+.O { --direction: -0.5; }
+.I { --direction: 0; }
+.N { --direction: 0.5; }
+.T { --direction: 1; }
+
+/* Плавное исчезновение и появление картинки */
+.picture.fade-out {
+  animation: fadeOutPic 0.6s ease-out forwards;
+}
+
+.picture.fade-in {
+  animation: fadeInPic 0.8s ease-out forwards;
+}
+
+@keyframes fadeOutPic {
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes fadeInPic {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes movePic {
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  100% { transform: translateX(-50%) scale(0.9) translateY(-30px); opacity: 0.6; }
+}
+
+.picture.move-picture {
+  animation: movePic 0.8s ease-out forwards;
+}
+
+@keyframes fadeInNew {
+  0% { opacity: 0; transform: translateX(-50%) scale(1.02); }
+  100% { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
+.picture.fade-in {
+  animation: fadeInNew 0.6s ease-in-out forwards;
+}
+
+
+
+
